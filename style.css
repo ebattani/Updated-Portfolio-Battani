@@ -1,0 +1,206 @@
+
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-size: 25px;
+  
+}
+
+/* Styling scroll behavior */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* Styling navigation bar */
+.navigation{
+  display: flex;
+    list-style-type: none;
+    font-family: 'Bebas Neue', cursive;
+    
+    
+    
+}
+
+/* Styling navigation links */
+.nav-link{
+  margin-left: 20px;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Getting rid of udnerline */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Header */
+h1{
+   font-size: 50px;
+
+}
+
+/* Styling the whole header section */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+   
+}
+
+/* About me section */
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 70rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Styling the bio text and border */
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Bio Header */
+.bio h2{
+    margin-bottom: 5px;
+}
+
+/* Bio Paragraph */
+.bio p {
+    line-height: 25px;
+    padding: 0.3rem 0;
+}
+
+/* Styling the text in the More About section */
+.more-about{
+    padding: 1rem 10rem;
+    text-align: center;
+    
+}
+
+.more-about h2 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: 25px;
+    padding: 0.4rem;
+  }
+
+
+  /* Styling the Projects section */
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+
+  .projects {
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  /* Pic sizes for projects */
+  .project-pic {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Centering */
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    
+  }
+  
+  /* Styling font for project text */
+  .project-details {
+    margin-bottom: 5px;
+
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  /* Contact section */
+  .contact{
+    text-align: center;
+
+  }
+
+  .project-link{
+    display: flex;
+    justify-content: center;
+  }
+
+  #resume{
+   font-size: 10px;
+  }
+
+  #avatar{
+    width: 35%;
+    height: 35%;
+  }
+
+  .bio h2{
+    font-size: 2rem;
+  }
+
+  header h2{
+    font-size: 4rem;
+  }
+
+  
+  /* Makes columns when under 768px */
+@media screen and (max-width: 500px) {
+ 
+ header,
+ section,
+ body{
+    flex-direction: column;
+  }
+
+}
+
