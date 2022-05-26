@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
     font-size: 25px;
@@ -58,6 +58,7 @@ header{
     padding: 0rem 2rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     background-color: wheat;
+    margin: 0;
    
 }
 
@@ -175,9 +176,6 @@ header{
     justify-content: center;
   }
 
-  #resume{
-   font-size: 10px;
-  }
 
   #avatar{
     width: 35%;
@@ -189,18 +187,144 @@ header{
   }
 
   header h2{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   
   /* Makes columns when under 768px */
+
+  @media screen and (max-width: 900px) {
+
+    body {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        padding: 0 10px;
+    }
+
+    header{
+      width: 100%;
+      margin: 0;
+
+    }
+    
+    header h2 {
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .navigation li a{
+      font-size: 18px;
+    }
+
+    .about-me .bio h2{
+      font-size: 1rem;
+    
+    }
+
+    .about-me .bio p{
+
+      font-size: .5rem;
+
+    }
+
+    .more-about{
+      display: inline;
+    }
+
+    .more-about p{
+      font-size: .5rem;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+
+    }
+
+    .more-about a h2{
+      margin-top: 10px;
+      font-size: .75rem;
+    }
+
+    .projects{
+      display: inline;
+      width: 75%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .projects h2{
+      font-size: 1rem;
+    }
+
+    .projects .projects-container .project-container h3{
+      font-size: 1rem;
+    }
+
+    .projects .projects-container .project-container .project-details{
+      font-size: .5rem;
+    }
+
+    .projects .projects-container .project-container a{
+      font-size: .5rem;
+    }
+
+    .contact{
+      font-size: .5rem;
+    }
+
+    .contact h2{
+      font-size: 1rem;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
- 
- header,
- section,
- body{
-    flex-direction: column;
+  header h2 {
+    font-size: 1rem;
+
+  }
+
+  .navigation li a{
+    font-size: 14px;
+    display: inline;
+  
+  }
+  img#avatar{
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  .about-me .bio{
+    display: none;
+
   }
 
 }
 
+@media screen and (max-width: 320px) {
+
+  img#avatar{
+    width: 300px;
+  }
+
+  .about-me{
+    /* display: block; */
+    text-align: center;
+
+  }
+
+  .navigation li a{
+    display: none;
+  }
+
+  header h2 {
+    font-size: 3rem;
+    text-align: center;
+
+  }
+}
